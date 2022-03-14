@@ -48,7 +48,6 @@ def glow(im, radius):
     return res
 
 
-
 def main():
     filters = {'lines': lines, 'glitch': glitch, 'glow': glow}
     args = args_init()
@@ -63,6 +62,6 @@ def main():
     im = make_image(source, filters[filter_], opt)
     im.save(out, 'PNG')
 
+
 if __name__ == '__main__':
     main()
-
